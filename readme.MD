@@ -2,3 +2,9 @@ In this project, we are quantifying the degree of a-synuclein cell to cell trans
 
 This repository comprises the scripts for the image analysis and graph generations.
 The used images are available on http://figshare.com/...
+
+the script run_all_RG.m calls iterates through the entire dataset computing features and plotting results,
+
+the script red_vs_green.m is the function actually computing the features,
+
+while plot_data.m is the function plotting and saving the heatmaps.
