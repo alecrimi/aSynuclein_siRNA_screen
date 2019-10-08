@@ -8,8 +8,12 @@ In this project, we are quantifying the degree of a-synuclein cell to cell trans
 This repository comprises the scripts for the image analysis and graph generations.
 The used images are available on http://figshare.com/...
 
+The image analysis scripts are for the Matlab environment, while the picklist scripts are Python scripts.
+
 the script run_all_RG.m calls iterates through the entire dataset computing features and plotting results,
 
 the script red_vs_green.m is the function actually computing the features,
 
 while plot_data.m is the function plotting and saving the heatmaps.
+
+picklist.py and code_python_sRNA_screen.py are the files which map source and destination according to plate picklists reported in final_picklist.zip
