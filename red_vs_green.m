@@ -1,3 +1,8 @@
+% A.Crimi 2019
+% 
+% Code related to Kara et al. 2019?
+%
+
 %%%% Red vs Green staining %%%%
 
 function [n, n_norm, mean_int, n_pixel, n_green, intensities ] =  red_vs_green( red_file, green_file)
