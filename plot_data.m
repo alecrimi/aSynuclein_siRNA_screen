@@ -1,3 +1,7 @@
+% A.Crimi 2019
+% 
+% Code related to Kara et al. 2019?
+%
 function plot_data(filename)
  
 %data = csvread(filename);
