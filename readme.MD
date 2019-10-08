@@ -1,7 +1,7 @@
 This is the code repository related to the manuscript 
 @article{Kara2020Identification, author = {Eleanna Kara, Alessandro Crimi, Marc Emmenegger, Claudia Manzoni, Sara Bandres Ciga, Juan Botía, Annie Wiedmer, Manfredi Carta, Daniel Heinzer, Merve Avar, Andra Chincisan, Manuela Tan, Edwin Jabbari, Cornelis Blauwendraat, Sonia Garcia Ruiz, Daniel Pease, Jiang-An Yin, Lorene Mottier, Alessandra Carrella, Dezirae Schneider, Caroline Aemisegger, Zhanyun  Fan, Jordan Marks, Sarah Hopp, Huw Morris, Patrick Lewis, Mike Nalls, Mina Ryten, John Hardy, Bradley Hyman, Adriano Aguzzi}, title = {IDENTIFICATION OF GENETIC MODIFIERS OF Α-SYNUCLEIN PROPAGATION THROUGH A HIGH-CONTENT, GENOME-WIDE RNAI SCREEN}, booktitle = {  }, year = {  }, month = {  } }  
 
-![GitHub Logo](screening.png)Format: !["Screening"](url)
+![GitHub Logo](screening.png) 
 
 In this project, we are quantifying the degree of a-synuclein cell to cell transfer and if/how it is modulated by each gene within the genome. To this end, we are using a construct encoding GFP-2a-aSynuclein-RFP and we are quantifying the number of recipient cells (RFP+GFP-) normalized to the total number of transfected cells (RFP+GFP+).  
 
