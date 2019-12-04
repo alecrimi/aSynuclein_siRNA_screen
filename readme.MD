@@ -1,4 +1,5 @@
 This is the code repository related to the manuscript 
+
 **_An integrated genomic approach to dissect the genetic landscape regulating the cell to cell transfer of a-synuclein/a-synuclein propagation_** 
 Eleanna Kara, Alessandro Crimi, Anne Wiedmer, Marc Emmenegger, Claudia Manzoni,  Sara Bandres-Ciga, Karishma D’Sa, Regina Reynolds, Juan A Botía, Marco Losa, Veronika Lysenko, Manfredi Carta, Daniel Heinzer, Merve Avar, Andra Chincisan, Cornelis Blauwendraat , Sonia Garcia Ruiz, Daniel Pease, Lorene Mottier, Alessandra Carrella, Dezirae Schneider, Andreia Malgahaes, Caroline Aemisegger, Alexander Theoxarides, Zhanyun  Fan, Jordan D Marks, Sarah Hopp, Mike Nalls, Patrick Lewis, , Mina Ryten, John Hardy , Bradley T Hyman, Adriano Aguzzi   
 
