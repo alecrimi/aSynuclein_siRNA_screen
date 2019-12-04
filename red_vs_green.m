@@ -15,8 +15,8 @@ function [n, n_norm, mean_int, n_pixel, n_green, intensities ] =  red_vs_green( 
        % Load files
        red_c = imread(red_file);
        green_c = imread(green_file);
-     %  figure; imagesc(green_c)
-    %   figure; imagesc(red_c)
+       %  figure; imagesc(green_c)
+       %   figure; imagesc(red_c)
    
        % Subtract background
        background_red = imopen(red_c,strel('disk',bg_sub_operator));
