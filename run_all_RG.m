@@ -1,6 +1,6 @@
 % A.Crimi 2019
 % 
-% Code related to Kara et al. 2019?
+% Code related to Kara et al. 2020
 %
 % Main script loading all images and calling the functions to compute features and plot results
 list = dir('*.tif');
