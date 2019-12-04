@@ -1,6 +1,6 @@
 % A.Crimi 2019
 % 
-% Code related to Kara et al. 2019?
+% Code related to Kara et al. 2020
 %
 
 %%%% Red vs Green staining %%%%
