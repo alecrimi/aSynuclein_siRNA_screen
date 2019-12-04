@@ -28,7 +28,7 @@ end
 csvwrite('results_feautes.csv',results);
   
 % Average per well field
-results_averaged = zeros(length(list)/4,5);
+results_averaged = zeros(length(list)/4,5);  % Individual intensities are not used here, so there are only 5 files
 result_count = 1;
 for jj = 1 : 2:  length(list)/2
     results_averaged(result_count,:)  = mean( results(jj:jj+1,:)  );
