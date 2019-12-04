@@ -1,6 +1,6 @@
 % A.Crimi 2019
 % 
-% Code related to Kara et al. 2019?
+% Code related to Kara et al. 2020
 %
 function plot_heatmap(single_hm, feature_name)
 
