@@ -2,6 +2,8 @@
 """
 Created on Fri Dec 22 09:55:35 2017
 
+This script maps source and destination according to plate picklists reported 
+
 @author: achin
 """
 import numpy as np
@@ -40,10 +42,13 @@ def get_library (full_library_name):
     library_name = library_name_no[1]
     return library_name
 
+# Read all csv files for the plates
 def process_file (ind):    
     file = "plate_P_" + str(ind)+ ".csv"
     df = pd.read_csv (file)
     return df
+
+###################### MAIN ###############################
 frames = [ process_file(i) for i in range(1, no_plates+1)]
 result = pd.concat(frames)
 path = 'plate_all.csv' 
