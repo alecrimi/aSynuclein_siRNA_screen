@@ -21,9 +21,9 @@ https://figshare.com/articles/alphasyn_screening_pt_3/11317439
 
 The image analysis scripts are for the Matlab environment, while the picklist scripts are Python scripts.
 
-the script run_all_RG.m calls iterates through the entire dataset computing features and plotting results,
+the script run_all_RG.m  iterates through the entire dataset computing features and plotting results,
 
-the script red_vs_green.m is the function actually computing the features. Several features are computed but the one in the end used in the further steps of the analysis described in the manuscript is the "Normalized Cell Count". 2 images were acquired per well and saved into a csv file (results_feautes.csv). The main script run_all_RG.m computes the mean of those 2 values, and then call the functions below for plotting the graphs.
+the script red_vs_green.m is the function actually computing the features. Several features are computed but the one in the end used in  further analysis described in the manuscript is the "Normalized Cell Count". 2 images were acquired per well and saved into a csv file (results_feautes.csv). The main script run_all_RG.m computes the mean of those 2 values, and then call the functions below for plotting the graphs.
 
 while plot_data.m is the function plotting and saving the heatmaps.
 
