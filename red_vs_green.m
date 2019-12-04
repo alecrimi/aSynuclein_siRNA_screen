@@ -9,6 +9,8 @@ function [n, n_norm, mean_int, n_pixel, n_green, intensities ] =  red_vs_green( 
 
        % Common threshold for binarization
        bin_th = 0.1; 
+       % Size of the operator used to create the background image
+       bg_sub_operator = 15; 
 
        % Load files
        red_c = imread(red_file);
@@ -17,8 +19,8 @@ function [n, n_norm, mean_int, n_pixel, n_green, intensities ] =  red_vs_green( 
     %   figure; imagesc(red_c)
    
        % Subtract background
-       background_red = imopen(red_c,strel('disk',15));
-       background_green = imopen(green_c,strel('disk',15));
+       background_red = imopen(red_c,strel('disk',bg_sub_operator));
+       background_green = imopen(green_c,strel('disk',bg_sub_operator));
        red_c = red_c ./ background_red;
        green_c = green_c ./ background_green;
 
@@ -29,8 +31,8 @@ function [n, n_norm, mean_int, n_pixel, n_green, intensities ] =  red_vs_green( 
        % Automatic Contrast adjustment 
        red_adj =imadjust(red_c);       
        green_adj =imadjust(green_c);       
-    %   figure; imagesc(green_adj)
-    %   figure; imagesc(red_adj)
+       %   figure; imagesc(green_adj)
+       %   figure; imagesc(red_adj)
        
        % Binarize images and compute difference
        BW_red = imbinarize(red_adj,bin_th );
@@ -48,12 +50,14 @@ function [n, n_norm, mean_int, n_pixel, n_green, intensities ] =  red_vs_green( 
            end
        end 
        
-       threshold_artFX = 150000;
-     %  if (maxvalue < threshold_artFX)
-        if (1)
+       % If a segmented elements is larger than a threshold is an artifact  
+       %threshold_artFX = 150000;
+       %  if (maxvalue < threshold_artFX)
+        if (1) % (NOT USED)
            difference = BW_red - BW_green;
-           dif = difference>0; %Discart negative values as these represent the difference green - red.
- %          figure; imagesc(dif)
+           %Discart negative values as these represent the difference green - red.
+           dif = difference>0; 
+           %          figure; imagesc(dif)
 
            % Perform morphological operators
            % The dilation is a bit bigger to avoid over partitioning of the
@@ -62,11 +66,11 @@ function [n, n_norm, mean_int, n_pixel, n_green, intensities ] =  red_vs_green( 
            BW_erode = imerode(dif,SE_ero);  
            SE_dil = strel('rectangle',[1 1]); 
            BW_final = imdilate(BW_erode,SE_dil);
-       %    figure;imagesc(BW_final);
+           %    figure;imagesc(BW_final);
 
            % Label cells and count them
            [L,n] = bwlabel(BW_final);
-   %       figure;imagesc(L);
+           %       figure;imagesc(L);
 
            % Compute mean intensity within cells
            [r,c] = find(BW_final>0);
@@ -85,7 +89,7 @@ function [n, n_norm, mean_int, n_pixel, n_green, intensities ] =  red_vs_green( 
 
                     % Intracells intensities
                     intensities = 0;
-           %{
+            
            intensities = zeros(n,1);
            for ll = 1 : n
                [loc_r,loc_c] = find(L==ll);
@@ -94,7 +98,7 @@ function [n, n_norm, mean_int, n_pixel, n_green, intensities ] =  red_vs_green( 
                end
                intensities(ll) = mean(temp_stack);
            end
-           %}
+            
 
                    % Normalize the number of detected cells over the number of cells in
                    % the Green Channel
