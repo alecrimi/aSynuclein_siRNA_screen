@@ -8,9 +8,9 @@ list = dir('*.tif');
 results = zeros(length(list)/2,5);
 result_count = 1;
  
+% Compute the features through the images 
 for kk = 1 : 2:  length(list)
     
-    % [n, mean_int, n_pixel, intensities] = 
     [n, n_norm, mean_int, n_pixel, intensities] =  red_vs_green( list(kk+1).name, list(kk).name);
     
     results(result_count,1)  = n;
