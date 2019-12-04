@@ -9,16 +9,7 @@ fid = fopen(filename, 'rt');  %the 't' is important!
 stream = textscan(fid,'%f%f%f%f%f%s%s%s%s','HeaderLines',1,'Delimiter',',','EndOfLine','\r\n','ReturnOnError',false);
 fclose(fid); 
 data_averaged = cell2mat(stream(:,1:5));
-
-%{
-% Average per well
-data_averaged = zeros(length(data)/2,5);
-result_count = 1;
-for jj = 1 : 2:  length(data)
-    data_averaged(result_count,:)  = mean( data(jj:jj+1,:)  );
-    result_count = result_count +1;
-end
-%}
+ 
 % The convetion is to have 
 % in the first column Cell count
 % in the second column Norm Cell Count
