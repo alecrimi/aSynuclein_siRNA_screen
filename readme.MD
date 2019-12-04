@@ -11,13 +11,13 @@ Eleanna Kara, Alessandro Crimi, Anne Wiedmer, Marc Emmenegger, Claudia Manzoni, 
 In this project, we are quantifying the degree of a-synuclein cell to cell transfer and if/how it is modulated by each gene within the genome. To this end, we are using a construct encoding GFP-2a-aSynuclein-RFP and we are quantifying the number of recipient cells (RFP+GFP-) normalized to the total number of transfected cells (RFP+GFP+).  
 
 This repository comprises the scripts for the image analysis and graph generations.
-The used images are available on https://figshare.com/articles/alphasyn_screening/11317136
+Most of the used images are available on https://figshare.com/articles/alphasyn_screening/11317136
 
 The image analysis scripts are for the Matlab environment, while the picklist scripts are Python scripts.
 
 the script run_all_RG.m calls iterates through the entire dataset computing features and plotting results,
 
-the script red_vs_green.m is the function actually computing the features,
+the script red_vs_green.m is the function actually computing the features. Several features are computed but the one in the end used in the further steps of the analysis described in the manuscript is the "Normalized Cell Count". 
 
 while plot_data.m is the function plotting and saving the heatmaps.
 
