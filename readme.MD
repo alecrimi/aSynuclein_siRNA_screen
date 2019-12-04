@@ -14,7 +14,9 @@ This repository comprises the scripts for the image analysis and graph generatio
 The used images are available on those 3 repositories:
 
 https://figshare.com/articles/alphasyn_screening/11317136
+
 https://figshare.com/articles/alphasyn_screening_pt_2/11317355
+
 https://figshare.com/articles/alphasyn_screening_pt_3/11317439
 
 The image analysis scripts are for the Matlab environment, while the picklist scripts are Python scripts.
