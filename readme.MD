@@ -28,3 +28,5 @@ the script red_vs_green.m is the function actually computing the features. Sever
 while plot_data.m is the function plotting and saving the heatmaps.
 
 picklist.py and code_python_sRNA_screen.py are the files which map source and destination according to plate picklists reported in final_picklist.zip
+
+Supplementary tables comprising the genelist are those referred to the paper.
