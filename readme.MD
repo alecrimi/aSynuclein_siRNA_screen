@@ -29,4 +29,4 @@ while plot_data.m is the function plotting and saving the heatmaps.
 
 picklist.py and code_python_sRNA_screen.py are the files which map source and destination according to plate picklists reported in final_picklist.zip
 
-Supplementary tables 8,9,10 are those referred to the preprint of the paper on https://www.biorxiv.org/content/10.1101/2019.12.23.886838v1
+Supplementary tables 8,9,10 are those referred to in the preprint of the paper on https://www.biorxiv.org/content/10.1101/2019.12.23.886838v1
